@@ -4,7 +4,9 @@ package com.geely.design.pattern.behavioral.templatemethod;
  * Created by geely
  */
 public abstract class ACourse {
-
+    /**
+     * 这里都是声明为final，防止子类来重写方法
+     */
     protected final void makeCourse(){
         this.makePPT();
         this.makeVideo();
